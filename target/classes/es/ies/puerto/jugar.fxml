@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="836.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.ies.puerto.controller.LoginController">
+   <children>
+      <ImageView fitHeight="794.0" fitWidth="1289.0" layoutX="-36.0" layoutY="-225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/wall.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="respuestaD2" layoutX="119.0" layoutY="106.0" mnemonicParsing="false" onAction="#jugar" prefHeight="150.0" prefWidth="236.0" style="-fx-background-color: purple;" text="Arte">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/pintura.jpeg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="respuestaD" layoutX="119.0" layoutY="306.0" mnemonicParsing="false" onAction="#jugar" prefHeight="106.0" prefWidth="236.0" style="-fx-background-color: purple;" text="Mitologia">
+         <graphic>
+            <ImageView fitHeight="142.0" fitWidth="340.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/mitologia.jpeg" />
+               </image>
+               <viewport>
+                  <Rectangle2D width="22222.0" />
+               </viewport>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="respuestaD1" layoutX="454.0" layoutY="112.0" mnemonicParsing="false" onAction="#jugar" prefHeight="150.0" prefWidth="236.0" style="-fx-background-color: purple;" text="Ciencia">
+         <graphic>
+            <ImageView fitHeight="122.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/relatividad.jpeg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="respuestaD3" layoutX="465.0" layoutY="306.0" mnemonicParsing="false" onAction="#jugar" prefHeight="106.0" prefWidth="236.0" style="-fx-background-color: purple;" text="Completo">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/completo.jpeg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="tienda" layoutX="46.0" layoutY="36.0" mnemonicParsing="false" onAction="#tienda" text="Tienda">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="usuario" layoutX="726.0" layoutY="36.0" mnemonicParsing="false" onAction="#usuario" text="Usuario">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Text fill="WHITE" layoutX="141.0" layoutY="294.0" stroke="#8500dd" strokeType="OUTSIDE" strokeWidth="2.0" text="Mitologia" wrappingWidth="117.40380859375">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="487.0" layoutY="97.0" stroke="#8500dd" strokeType="OUTSIDE" strokeWidth="2.0" text="Ciencia">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="501.0" layoutY="294.0" stroke="#8500dd" strokeType="OUTSIDE" strokeWidth="2.0" text="Completo">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="141.0" layoutY="96.0" stroke="#8500dd" strokeType="OUTSIDE" strokeWidth="2.0" text="Arte">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
