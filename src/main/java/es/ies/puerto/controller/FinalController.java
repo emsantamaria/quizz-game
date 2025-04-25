@@ -133,14 +133,8 @@ public class FinalController {
      */
     public void play(String soundFile, double volume, double delaySeconds) {
         try {
-            //AudioClip clip = new AudioClip(SoundPlayer.class.getResource("/sounds/" + soundFile).toExternalForm());
-
-            File file = new File("" + soundFile);
-            URL url=getClass().getResource("/sounds/"+file);
-            if (!file.exists()) {
-                
-            }
-
+            File file=new File("src/main/resources/sounds/"+soundFile);
+            URL url=file.toURI().toURL();
             clip = new AudioClip(url.toString());
 
             clip.setVolume(Math.max(0.0, Math.min(volume, 1.0)));
