@@ -109,7 +109,9 @@ public class FinalController {
 
     @FXML
      protected void goMain(){
-        clip.stop();
+        if(clip!=null&&clip.isPlaying()){
+            clip.stop();
+        }
         FXMLLoader loader = new FXMLLoader(PrincipalApplication.class.getResource("jugar.fxml"));
             Parent root;
             try {

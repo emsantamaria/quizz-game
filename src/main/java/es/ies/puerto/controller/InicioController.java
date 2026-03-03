@@ -130,7 +130,7 @@ public class InicioController {
         }
         for (int i = 0; i < 7; i++) {
             Pregunta pregunta = preguntasTipo.get((int) (Math.random() * preguntasTipo.size()));
-            if (!preguntas6.contains(pregunta)) {
+            if (!preguntas6.contains(pregunta)&&pregunta.getRespuestas().size()>=2 ) {
                 preguntas6.add(pregunta);
             } else {
                 i--;
